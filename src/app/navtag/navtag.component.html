@@ -1,0 +1,8 @@
+<div class="navtag">
+    <a class="title" >{{tag.title}}<span *ngIf="tag.subtags.length>0"><i class="fa-solid fa-chevron-down"></i></span></a>
+
+    <div class="subtags" *ngIf="tag.subtags.length>0">
+        <a class="subtag"href="" *ngFor="let subtag of tag.subtags">{{subtag.subtag}}</a>
+    </div>
+
+</div>
