@@ -1,4 +1,11 @@
+
 header{
-    padding: 1rem;
+    z-index: 5;
+    width: 100%;
+    position: fixed;
     
+}
+
+.router-outlet{
+    padding-top: 150px;
 }

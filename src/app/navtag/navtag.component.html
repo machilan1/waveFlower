@@ -1,8 +1,8 @@
 <div class="navtag">
     <a class="title" >{{tag.title}}<span *ngIf="tag.subtags.length>0"><i class="fa-solid fa-chevron-down"></i></span></a>
 
-    <div class="subtags" *ngIf="tag.subtags.length>0">
-        <a class="subtag"href="" *ngFor="let subtag of tag.subtags">{{subtag.subtag}}</a>
+    <div class="subtags" [style.width]="tag.subtags.length<6? '200px':''" *ngIf="tag.subtags.length>0">
+        <a class="subtag"href={{subtag.link}} *ngFor="let subtag of tag.subtags">{{subtag.subtag}}</a>
     </div>
 
 </div>

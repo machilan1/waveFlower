@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="content">
+        <div class="picture-container">
+            <img class="titlePicture" src={{card.picture}} alt="product pic">
+            <div class="filler"></div>
+            <img class="imgHover" src={{card.pictureHover}} alt="product pic">
+            
+        </div>
+            <div class="text-container">
+                <div class="title">{{card.title}}</div>
+                <span class="price" [style.text-decoration]="card.discount!==0? 'line-through':'none'" [style.color]="card.discount!==0? 'rgba(0, 0, 0, 0.4)':'none'">{{card.price|currency:'NT':'symbol':'.0-2'}}</span>
+                <span class="discount" *ngIf="card.discount!==0"> {{card.discount|currency:'NT':'symbol':'.0-2'}}</span>
+            </div>
+
+    </div>
+</div>

@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="container">
+    <div class="content-container">
+        <div class="section" *ngFor="let section of sections">
+            <div class="slider" *ngIf="section.slide===true">
+                Loading Slider ... 
+            </div>
+            <img class="banner-picture" *ngIf="section.slide ===!true" src={{section.img}} alt="">
+            <div class="line-container">
+                <p *ngFor="let line of section.texts.split('.')" [style.padding-bottom]="line.length==0? 0:'.5rem'">
+                    {{line}}
+                </p>
+            </div>
+            <h1>{{section.showtitle}}</h1>
+            <div class="cards-container">
+                <app-card *ngFor="let card of section.cards" [card] ='card'></app-card>
+            </div>
+        </div>
+    </div>
+</div>

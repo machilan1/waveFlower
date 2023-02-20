@@ -12,6 +12,10 @@ import { NavtagComponent } from './navtag/navtag.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
+import { CardComponent } from './card/card.component';
+import { OopsComponent } from './oops/oops.component';
+import { NavtagSideComponent } from './navtag-side/navtag-side.component';
+
 
 
 @NgModule({
@@ -23,6 +27,9 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     ProductsComponent,
     ContactComponent,
+    CardComponent,
+    OopsComponent,
+    NavtagSideComponent
 
   ],
   imports: [

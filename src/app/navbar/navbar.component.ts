@@ -22,11 +22,11 @@ export class NavbarComponent {
   tags=[
     {
       title:"花禮",
-      subtags:[{subtag:"精選鮮花",link:'shop'},{subtag:'精選永生花',link:'shop'},{subtag:'求婚花束',link:'shop'},{subtag:'捧花',link:'shop'},{subtag:'高架花籃',link:'shop'},{subtag:'酒禮',link:'shop'},{subtag:'當日限定花束',link:'shop'},{subtag:'所有商品',link:'shop'},{subtag:'花禮維護與照顧',link:'shop'}]
+      subtags:[{subtag:"聯絡我們",link:'/contact'},{subtag:"精選鮮花",link:'/products'},{subtag:'精選永生花',link:'products'},{subtag:'求婚花束',link:'products'},{subtag:'捧花',link:'products'},{subtag:'高架花籃',link:'products'},{subtag:'酒禮',link:'products'},{subtag:'當日限定花束',link:'products'},{subtag:'所有商品',link:'products'},{subtag:'花禮維護與照顧',link:'products'}]
     },
     {
       title:"周花",
-      subtags:[{subtag:"生活週花網誌",link:"shop"},{subtag:"訂閱生活週花",link:"shop"}]
+      subtags:[{subtag:"生活週花網誌",link:"/products"},{subtag:"訂閱生活週花",link:"products"}]
     },
     {
       title:"周邊",
@@ -34,7 +34,7 @@ export class NavbarComponent {
     },
     {
       title:"婚禮",
-      subtags:[{subtag:"求婚企劃",link:"shop"},{subtag:"永生相片桌",link:"shop"},{subtag:"婚禮",link:"shop"}]
+      subtags:[{subtag:"求婚企劃",link:"products"},{subtag:"永生相片桌",link:"products"},{subtag:"婚禮",link:"products"}]
     },
     {
       title:"作品",
@@ -46,7 +46,7 @@ export class NavbarComponent {
     },
     {
       title:"關於浪花",
-      subtags:[{subtag:"Line官方客服",link:"shop"},{subtag:"Instagram",link:"shop"},{subtag:"Facebook",link:"shop"},{subtag:"實體店面",link:"shop"},{subtag:"常見問題",link:"shop"},{subtag:"訂購流程",link:"shop"},{subtag:"售後服務",link:"shop"},{subtag:"網站約定與隱私條款",link:"shop"}]
+      subtags:[{subtag:"Line官方客服",link:"products"},{subtag:"Instagram",link:"products"},{subtag:"Facebook",link:"products"},{subtag:"實體店面",link:"products"},{subtag:"常見問題",link:"products"},{subtag:"訂購流程",link:"products"},{subtag:"售後服務",link:"products"},{subtag:"網站約定與隱私條款",link:"products"}]
     }
   ]
 

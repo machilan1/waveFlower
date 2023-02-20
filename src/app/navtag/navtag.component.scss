@@ -6,6 +6,7 @@
 }
 
 .title{
+    
     position: relative;
     width: fit-content;
 }
@@ -23,15 +24,16 @@ i{
     max-height: 300px;
     width:400px;
     padding-top: 2rem;
+    padding-left: 1rem;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
-
     opacity: 0;
     transition: .3s;
     pointer-events: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.284);
 }
 
 .subtag{
@@ -40,6 +42,9 @@ i{
     display: inline-block;
 }
 
+.subtag:hover{
+    color: var(--primary-color);
+}
 .navtag:hover .subtags{
     opacity: 1;
     pointer-events: auto;
